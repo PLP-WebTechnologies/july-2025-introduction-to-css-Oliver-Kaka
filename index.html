@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Introduction to CSS">
+        <title>Movie and Series recommendations</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="pg_title">Movies and Series to watch</h1>
+            <nav>
+                <a class="nav-btn" href="#platforms">Platforms</a>
+                <a class="nav-btn" href="#sect_movies">Movies</a>
+                <a class="nav-btn" href="#sect_series">Series</a>
+                <a class="nav-btn" href="#comments">Comments</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <p>The following is a guide to help you choose a movie or series you can watch when bored.</p>
+            </section>
+            <section id="platforms">
+                <h1>Platforms you can use.</h1>
+                <a href="https://www.netflix.com/"><img class="card" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAACUCAMAAACp1UvlAAAA51BMVEX///+xBg/lCRShYmK0AACxAAzYy8upEBHkAACYAACuBQ6vAADnAACdUVObAADVREXs7Ozj4eGfRUehTk/VCBLNBxGkWlu7Bg/CBhDdCBPdAADmAAuZPkCpY2T3/f3IBxH96+z729ymAADLSErJW1739veJPkClgoPQAADPio3ixMbTh4jQISXZu73McHPTMTPfr7DRamzXGB/VoKHn1tfWVlj0pqnrU1jmIibymJvpQ0bxjpL4w8XugYLoLDH1uLrtbHD5z9HgfoG+g4S2ICXnpqiudneVERfAqqueJyilQEG5jo/MvL1ybdugAAAEM0lEQVR4nO3ce1PaQBQF8GQFGwMoUR6GtJiAaSk+oAiKqOXRaqn6/T9PaX0Mkr03cYr3tDPsv4aZ3+xhd48Lg2Gsxmqsxv81uvUtauzrng8/5oix82mZrvVGlhoNR/N8fiOV0Y/U2lJdZUWN7GetyyTGkl3vaFc9j3QVSJjbRLr2SJd1gHSVXcrlHYZAV5oOsnKEdDEr8rgKdNl0kK3IFibpKtJBtoEuc5d0WV+QLpN853udxSAlXTa9hVVOgC6TWZH1hRUp6mJWZKeLdCUPUtTFBGn1Xp5Fsi6bXpFegHQxW9gp0GWatOsM6aKDVP0x0sUEeQ50mWlyC7MG8ytS2sWUCmt+RYq7mC3sAugyTSZIH+higvQugS7uLLpCuugV6X31n593xF1MqbCGQJeZpl0jpIspFf3nLQzhYoJ8LhUAl0nfVFijp7MI4WL+X3OfgnQ25V1JSgXCxbXDAdLFtEM1Brq4m4oLpItrhz7QxbXDMdIVWyowLu6m4qFUoFxx7RDligsS5OLOor4PdMWVCth8MUGOkK6Ydohz8VdOMBfXDs9CoItZkSoAurgtbIKcL7odeoch0MW0Q+sI6WJW5ASZI3NT0boHurhS8a2GczFnkfcdOF9MO1SujXTRpULtUjABFxOkKgDnizmLlFsGupgVqfaIIEXmi747VAWki7upIIKUcdFnkSoCXUw7VAX9K2Rc3Du/rH2HCbm4IIEu5nMs5QJz5FekbsKk5os5i7RBSrnodqhc3WukXK8tFVIuk/7GrfYsknJldg49EgbMMVM6sF4TpJhrOyiQE6Zph2Ku92GPnDA3uoXJuarXdJDRdijnMroV0hVdkYIuo5clYZGXSbpeE6Skyx+QKzJyFkm6jCt6whZrvtz+NfvzJb3lL5YKURcXJNJlXDBB2kDXmHYVka7wjD6L0kCXcZ60VAi7ApcuFUiXQQf58iySdp0mDFLa5atkQUq7whHTDhGuncdHhslKhbjL7yc6i8RdBh3k/IqUd10yQSJdTKmYuzuUdyVrhwBXonYIcIUDegtDuhK1Q4QrSNAOEa4k7RDhStIOIa6gT7oKSBfXDpE5JmiHGJdPuwpIF1MqHtshyDWkz6KHdghy+V9j2qGYK/fySa4d2pKu0ssn424qUC4uSNEcF1zGhG+HMFebb4cwV77FrkiYiw3SBroC+uOPouB8fVh8Ntzi2iHOZTAfSO4hXU3myzE20FVlPsdCzpdxTb/zd5Euh7kEFnPdaB6ng3Tf2JX+M1KpjNY1rGQty5uNKKzxFq50OpN6+OG4Wm1zc2Pjx+12bqp53Dnu1VutTqNRqViP4wlZWa7LTs0otdrP29Lazd10er/uOGHkV6wWR7Wa73ab7fbJZDJzdn4js9nI+fBXrlxp7W663nXyYTwn6psdAnm/GzRPDva3dLmvxmqsxj89fgF16436G+REOQAAAABJRU5ErkJggg==" alt="Netflix logo"></a>
+                <a href="https://www.hbomax.com/"><img class="card" src="data:image/png;base64,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" alt="HBOMAX logo"></a>
+                <a href="https://www.primevideo.com/"><img class="card" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQArwMBEQACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAYDBQcCAf/EAEIQAAEDAwICBgQMBAUFAAAAAAEAAgMEBREGIRIxBxNBUWFxIoGRoRQVMlJVc5KTsbLB0SMmM4IkNmJ0whZCRWPw/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECBAMFBv/EADERAAICAQMCAwYGAgMAAAAAAAABAgMRBBIxIUEUM1EFEyMycYEVIkJhkfCxwaHR4f/aAAwDAQACEQMRAD8A7igCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAiVVwpaX+vOxh7s5PsV41ylwjnO6EPmZC/6jt/z3n+1dfDWGd66lAaioDyc/7KeGsI8fSehqCh+c/wBieGsI/EKR8f0Xzn/ZTw1g/EKT78e0Xzn/AGU8NYR+I0n348ovnP8AYnhbB+JUfuPjyj+c/wCynhbB+JUfuemXmieQOsI8woems9C0dfRLuToZo5hmN4cPAri4uPKNULIzWYsyKC4QBAEAQBAEAQBAEB8JwEBStS6t6t76W3OORs6UfottGmysyPN1Orae2BUJLhJI4ue9zidzkr0FFLseVObfIbWO71bBycjK2rKnac3Iytq3JtKORlbVFTtKuTMoqSm0q5s9CpKbSrmz2JyVO0j3jPQqCo2kqxkykr5IZA5jyCFynVGS6o01amUHlMtdqubatvA/aUD2ry76HDquD6LSaxXdHybMLObggCAIAgCAIAgCAq+vr0bXahDCcTVOWg53De0rRpq98svsZdVbshhdzlBqHPOSea9ZI8Znpsh71JyaMzHnvUnNozMepTKYMzHqTm0Zmv3IzyUlGZWvUlGjK13ihVoyNcpKMyZQqe2uIwoaLJk6hqXxzNe04IOVwsgmsGui1xllF6oagVNNHLtuN8d68WyOyTR9bRara1IkKh2CAIAgCAIAgCA490q1rn6lbBk8MMDQB55P6helpFivJ5etebMehU43rWY2iTDxSPayNpe9xwGtGST3AKc9MlMZ6I2cFou0kromWyt42jJBgcMe0KrtrSzuQ9xY3ja/4/8ADw2CqFT8F+DTfCc46kRkvzjPyefLdW3xxuz0OLrlu246+hJbSVbRM51JUcMH9YmJwEfmcbbd6nfB4W5dSrqmstp9De6ifTymhjoLTU0jyCMSQOYZOWGgdvn4rPp3KO5zlk0axwmoqEGvtjJBgt1wlkdEygqjIz5Q6pwLfPK0O6tLO5GNaa6T2qDyZILfXyveyOjqHOYcPaIz6J8VLurSy5FI6a6TcYxeV+x5LJGSGKSN7JAcFhaQ7PkrqSaz2OEoSUtrXUlyUFdBEZZqOdkYGeJ0ZAHn3etUV1beFJF56S+Ed0oPH9/j7mJp9q6mbBmid6SrLgvB9S46Wl4qeRmfkkFeRrI4kmfTeyp5rcfQ3qxnrBAEAQBAEAQBAcO6U3Y1lUfVR/lXp6Xyzy9UviFbjfyWkzYNtp12b9bf91F+YKlnlv6Mmtfnj9UdA13f7jadQUMNFUlkRja90XCCHnjIwfMDCxaaqE4S3I26u6ddkVFm0vMMTdc6elDQJXidrvECN2PxVK5fAmvp/lF7YrxFb79f8Ff1zqGuhuFwtUbom0pYA4dWOI5aCd1p0lEHFTfJi1+omnOtcYN7qw/zBpr65/4xrhpvKt/vqd9Z59P1f+j5eLtWU2sqKhhnLaaQRccfCPS4nOB39StVTB6eUmuvUrqL7IauME+jx/lnq53Wsg1hSUMUxbTPEfEzhHpZzn8AldMHppTa69SL9RbHWxrT/K8dP5/6JcNPDJrKoke0F0VKxzR4kkZ93vVXNrTJLu2XjXGWvlJ8qKI8F0p6SOplrr3BXNkb6MMeDjwACu6ZTcVCvbjucY6mutSdtynnssFPaT2816581gkQu3UMlclw0lu2fyavK13Y+i9kcSLEsB7QQBAEAQBAEAQHCuld2NaVH1Uf5V6el8s87Ur4hWInbLQZ8G4027+YLZ/uovzBUsfw2TWvzr6nTdaX622m80rK+zxVsrYhLDMeHijPEdhkd4ysFFc5we2WDbqLIQkt0clQOr559U016qYQ5lMHNjp2OxwtLXN59/pZytioSqdafJheok7lY+3b7EG/3T45ulTWtj6oTAAMJzjDQF2ph7uCiZ9RJ2ycje3fVrLncbXVikdH8BeX8BfnjyWnu2+T71xr0zhGUc8na7Vb7ISx8pjuGohW6hprqKcsEHB/C4sk8JJ5+tXhRtqdeeThbqN96txxj/ZlrNQNq9QwXUU5aIgwdUX5zwk9vrUwo21OvPqVs1O/UK7HHb+SS/U8pvwulPCGAxCJ8TnZ4m+ahaVe693JiWtl4j30V2xgl1F/tEzZJI7JGKl4Ppu4die3kqx01qwnPoWs1mmeWqll/Q0LHbBbjyNpJhd6ShhIuejzmOf1Ly9dyj6D2T+r7FkWA9kIAgCAIAgCAIDg3S0f52qR/wCqL8q9PS+WYL18Qq0btloOGCVBO+GRk0LyySMhzHA7tIOxVXh8kPK4JNVdaq6yiatq5KqUN4Q57uIgd34qYwUeiRSUnJ5bySbHJb5LtTMukwZRdZ/HcD8kY92+M+CWblB7eSsNrmt3BsdTvszbqRp94fSBgy5riW8fbgn1KtLs2/E5JvVe74fBm0nSQXG+0VLVgugmc7YEjjw0nYqb5uFbaKUVqdiUuGSdW0dPbNQT0lGwsha1hDS4nGWg9qaecp15kRq6o12bY8GrjmacYcDnxXcxtGdr9gpz6nNozB+Dg7HuPNSmmUlFp4M7HqSjRIgd6ShkJF30Ycxz/wBq8vW9j3vZX6vsWdYT2AgCAIAgCAIAgOB9Lhxrep+qi/KvR03lmG/5yqRnZaDiSYJ5KeWOeINMkTw9gcMgkEEAju2TnoyDq3SBQx6itViudvaP8RMyIYHZNgb+Rx71hok4SlF/3BpvgrIxkv7kl3+qp4dW6ZsFMxgjgkEsjQNvkuDB7ifYorTdcpsmxpWxghcLVBc+k+OKpja6CC3tnLCNnEPwAftZ9SmM3DT5XdlZQU9T17Iy0mrpqrWTrKKOBtNHM6Jr9+MFoO/d2FQ6Eqt+epKvbu2Y6IwS2qG7dJFWKoB8FPDHK6MjZx4QBnw7fUFdWOGmWDm6lPVPd2Rv6V1xnlrIb1QUcFqDT1fpZOAe3s5b9mFwe1YcG9x3Sm21NLaV/SMFHb7JX33qxOY3vEPFzDG8vLPetOolKdka+OP+THpoQrrldzzj7E21V7dY2qugraeOOeHHC9nZkHhIz4gqs4eGnFxeclq5rWVSjNdUUOOQkDOx7V6qZ4LRLp3ekoZCRe9EHMc/9q8zW9j2/Zf6vsWlYT1wgCAIAgCAIAgOBdL3+eKn6qL8q9HTeWYrvnZUmcl3ORlBQhnT+jnV9roLG633yqbEaabipy5jnZad+wHcHPqIWTUVScsxRopsjGOJFdo7/FU9IEV6rZOrpzVF5cQTwMAIby8MLs68U7Fycd+bdz4LFW6xt9P0gsutLL8IoH0baaV7WkYy4nIBwdiB7SuSok6Nr5yXlalfvXGDYms0VT6iZfY7rIaiR/EY4smMEjBc4cOR7fUq4vcPd46E5oU/eZ6mvdq2io9eVFyheZ7fPGyJ72NIIw0bgHfYjkuiolKjb3Ryd8Y37lwS7g3R9W+Spl1DXOieS/4I2Zzm58GlpIUQd8eiivqRZHTyy3J/Qi6Nv9uhttVZrw/q6aYuLH74weYOOXflXvpnuU4clNNdBRdc+GbNlzsOmbVVQ2auNdV1HyXFwdg4wMkADA545qjrtumnNYSJVlGnrarllspMbwMAZwF6OTyHHHQl07vSRlUjoGhDmOo/tXm63sez7M/UWxYT1QgCAIAgCAIAgOBdL3+ean6mL8q9HTeWYrvMZUmcl3ORkjDTI0SPLGEgOeGl3CO04HPA3wj4JLRetFXKghbXW0i62yRvGypptyG/6m8/ZkeS5Qui3iXRlpVtLK6orYPZttzHcuxyZ7DlOSMGVruSFMGRrlJRozMfnAUlGjdWCgoq9z3XG7U1BCwgfxXDif5A/iudk5rpFZZaFcZfPLCLdTaRsNbFO223iWWoiZxOB4du4kYBwsz1NsWt0eTV4SmWVGXBR4pOJjT374XodzycZRNpn+kjKpHRNAHMdT5N/VebrOx6/s7uW9Yj0wgCAIAgCAIAgOA9L+Rrmo25wREfZXo6XyjFd85UmFdzkeyhJYNKauuWmZ/8M7raRzsyUsh9E+LfmnxHPtXKyqNnJ0hY4vodFpajRGucGemjp7g8YLXkRTepwOHD2rK1dV36Hb4dn1I1f0S07i51uuksPc2eMPA9YwVaOrfdFJaZdmaiboqvjP6Fbb5R/qc9n/ErqtXDumc3pp9mIei6/Ejram3MHeJHu/4BT4uHZMr4Wb5aNxQ9FjWYNwupcBuRDHw+8krm9Y+yLrRr9TPtXU6N0meGjp2XG4A4HpdZwnvLjs31bqErrl+Z4REnTRwsshU17m+I7zfq4xtq7l/g6VrBgAAYJHgM8+8Lo6lvjWuF1OStlslY+X0/gp7HYwAtx5+0l07/AEkZXB0jo6dxR1W22G7+1edrOx6fs/uXRYj0ggCAIAgCAIAeSA4x052t8V0t94YP4U0fwaTwc0lzT6w4+wLdpJ/lcDLqI9dxz3gLQD3rWcD6oAQHw79gQG6teq7/AGoNZR3apEQ5RyO6xo8MOzj1YXOVUJcospyXDLBD0o6iaMSGjk84cH3Fc3pay3v5oTdJuo5Rhj6WIY/7Ycn3lStLWiHqLDR3DUN4ugIuFzqZmHnGX8LPsjAPsXaNcI8I4ynOXLILXY5Lpk5OJma92GguJDc4GeWeako0ZWvUlGiVTP8ASUMrg610fUrobOZ3bGZ2R5D/AOK8zVSzPB6uihthn1LUsxsCAIAgCAIAgCA0+qrDBqSxVVsqTwCVuWSDnG8btcPX7leubhJSRWUVJYOCxW+Wkr57DeGdRXQHDCdg8dhae0Ebr0t25bomJx29GQ6+2VFFIQ5jsdhxsrKSZDWCGThSVHEhI4kIPocgPQepIwew9SiGe2yeKFWZWyKSrRkbJ4qSjRY9JWeovdxbDECIm+lLJjZo/dcrbFCOS1VXvJYO300DKaCOGFvDHG0NaPALyW23lnsRSisIzKCQgCAIAgCAIAgPhGQgK/q7SFs1TStjrmujqI94aqI4kjP6jwK6V2yreUVlBSXU5jd9K6wsrTGKVt6oW7Mkgx1jR4sO/sytkLapfszPKuS4KhVsrQ8sks9dE8c2ugd+y7pr1OLTXYjmOr+jav7l37Kcx9SMM+dXV/R1X9y79kzH1GGfeqrPo2s+5d+yZj6jDHV1n0bV/cO/ZMr1GGfQysH/AI2r+5d+yZXqGmewys+jqv7l37JlepXazLBb7pVyBlNa617u5sDj+ilyiu5XbJ9i56b6NbxWvbLdh8Agz8kkOkI8hy9azz1UI/L1OkNLKXzdDrVmtFHZqJtLQx8DG83Hdzz3krBOcpvLN0IKCwjYKpcIAgCAIAgCAIAgCAID5gID6gCAIAgCAIAgPmEAwEB9QBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAf/9k=" alt="Amazon  prime video"> </a>
+            </section>
+            <section id="sect_movies">
+                <h1>Movies</h1>
+                <p class="movies">These are some of the movies you can watch during your free time.</p>
+                <ol>
+                    <li class="mv-category">Action
+                        <ol from="a">
+                            <li>Red Notice</li>
+                            <li>Top Gun:Maverick</li>
+                            <li>American Snipper</li>
+                            <li>Heads of State</li>
+                        </ol>
+                    </li>
+                    <li class="mv-category">Horror
+                        <ol from="a">
+                            <li>Heretic</li>
+                            <li>Ash</li>
+                            <li>Blink Twice</li>
+                        </ol>
+                    </li>
+                    <li class="mv-category">Comedy
+                        <ol from="a">
+                            <li>Ted</li>
+                            <li>Codename:The cleaner</li>
+                            <li>Madea's destination wedding</li>
+                        </ol>
+                    </li>
+                    <li class="mv-category">Political
+                        <ol>
+                            <li>Sentinel</li>
+                            <li>Don't look up</li>
+                            <li>Darkest Hour</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section id="sect_series">
+                <h1>Series</h1>
+                <p>The following are some seies you can watch during your free time.</p>
+                <ol>
+                    <li class="sr-category">Political
+                        <ol from="a">
+                            <li>House of cards</li>
+                            <li>Designated Survivor</li>
+                            <li>White house down</li>
+                            <li>The Oval</li>
+                        </ol>
+                    </li>
+                    <li class="sr-category">Heist
+                        <ol from="a">
+                            <li>Money Heist</li>
+                            <li>Kaleidoscope</li>
+                            <li>Lupin</li>
+                        </ol>
+                    </li>
+                    <li class="sr-category">Comedy
+                        <ol from="a">
+                            <li>Big Bang Theory</li>
+                            <li>Brooklyn nine-nine</li>
+                            <li>Modern Family</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section id="comments">
+                <h1>Suggestions and Comments</h1>
+                <p>Thank you for visiting my website.Feel free to leave any suggestions</p>
+                <form>
+                    <label for="review">Was this helpfull</label>
+                    <input type="radio" name="review" id="Helpful" value="yes" required><label for="Helpful">Yes</label>
+                    <input type="radio" name="review" id="Not-Helpful" value="yes" required><label for="Helpful">Yes</label>
+                    <br><br>
+                    <label for="Suggestions">Suggestions</label>
+                    <textarea rows="9" cols="50" placeholder="Enter your thoughts here." name="Suggestions" id="Suggestions"></textarea>
+                    <br><br>
+                    <input id="btn-submit" type="submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Simple website for css introduction and box model</p>
+        </footer>
+    </body>
+</html>
